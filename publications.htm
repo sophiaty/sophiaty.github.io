@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html>
+<title>Yuan Tian's Home Page</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+.w3-sidebar {
+  z-index: 3;
+  width: 250px;
+  top: 43px;
+  bottom: 0;
+  height: inherit;
+}
+
+.container {
+    overflow: hidden;
+}
+
+.filterDiv {
+    text-align: left;
+    margin: 2px;
+    display: none; /* Hidden by default */
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+    display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+   width: 70px;
+  padding: 8px 8px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+/* Add a grey background to the active (and on mouse over) button */
+.btn:hover, .active {
+  background-color: #ccc;
+}
+
+
+</style>
+
+
+
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+    <a href="default.htm#about" class="w3-bar-item w3-button w3-hide-small w3-hover-white">About</a>
+    <a href="default.htm#research" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Research</a>
+    <a href="default.htm#experience" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Experiences</a>
+    <a href="default.htm#service" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Service</a>
+    <a href="#publication" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Publications</a>
+    <a href="default.htm#award" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Awards</a>
+
+  </div>
+</div>
+
+<!-- The Grid -->
+ <div class="w3-row w3-padding-64">
+
+<div class="w3-col" style="width:65%">
+ <div class="w3-container">
+	<div class="spanCenter">
+      <section>	  
+      <a name="publication"></a>
+       <div class="filterDiv others"> 
+      <h3 class="w3-text-blue-grey">Work in Process </h3>
+	  <ol>
+		 <li><strong>Rule-based Specification Mining Leveraging Learning to Rank</strong>,
+		 <br>submitted to Automated Software Engineering (AUSE), now Minor revision.   
+		 <br>by Zherui Cao, <strong>Yuan Tian</strong>, Tien-Duy B. Le, and David Lo.</br></li>
+         <br>
+         <li><strong> Recommending Who to Follow in the Software Engineering Twitter Space</strong>,
+         <br>submitted to ACM Transactions on Software Engineering and Methodology (TOSEM), now Major revision. 
+         <br>by Abhishek Sharma, <strong>Yuan Tian</strong>, Agus Sulistya, and David Lo. </br></li>
+		  </ol>
+		  </div>
+	
+ <div class="filterDiv others-2015,2016,2017">
+	  <h3 class="w3-text-blue-grey">Published Journal Papers </h3>
+	  </div>
+	  <ol>
+		  <div class="filterDiv others-2017">
+	      <li><strong>WebAPIRec: Recommending Web APIs to Software Projects via Personalized Ranking</strong>，
+		  <br>in IEEE Transactions on Emerging Topics in Computational Intelligence, 2017,
+		  <br>by Ferdian Thung, Richard J. Oentaryo, David Lo, and <strong>Yuan Tian</strong>. 
+		  <br>Tags: <span class="w3-tag w3-teal">Web API</span> 
+		  <span class="w3-tag w3-teal">Recommendation</span> 
+		  <span class="w3-tag w3-teal">TETCI</span>   </br></li>
+		  <br></div>
+	      
+	      <div class="filterDiv emse-2016">
+	      <li><strong> On the Unreliability of Bug Severity Data</strong>, 
+	      <br>in Journal of Empirical Software Engineering, 2016,
+		  <br>by <strong>Yuan Tian</strong>, Nasir Ali, David Lo, and Ahmed E. Hassan.
+		  <br>Tags: <span class="w3-tag w3-teal">Quality of Bug Data</span> 
+		  <span class="w3-tag w3-teal">Empirical Software Engineering</span> 
+		  <span class="w3-tag w3-teal">EMSE</span> </br></li>
+		  <br></div>
+		  
+		  <div class="filterDiv emse-2015">
+		  <li><strong> Automated Prediction of Bug Report Priority Using Multi-factor Analysis</strong>, 
+		  <br> in Journal of Empirical Software Engineering, 2015,
+		  <br>by <strong>Yuan Tian</strong>, David Lo, Xin Xia and Chengnian Sun.
+		  <br>Tags: <span class="w3-tag w3-teal">Bug Prioritization</span> 
+		  <span class="w3-tag w3-teal">Multi-factor Analysis</span> 
+		  <span class="w3-tag w3-teal">EMSE</span> </br></li>
+		   <br></div>
+		  </ol>
+      <h3 class="w3-text-blue-grey">Published Conference Papers </h3>
+        <ol>
+        <div class="filterDiv ase-2017">
+        <li><strong>APIBot: Question Answering Bot for API Documentation</strong>, 
+        <br>in 32nd IEEE/ACM International Conference on Automated Software Engineering, 2017,
+        <br>by <strong>Yuan Tian</strong>, Ferdian Thung, Abhishek Sharma, David Lo
+        <br>Tags: <span class="w3-tag w3-teal">API documentaiton</span> 
+        <span class="w3-tag w3-teal">Question Answering Bot</span> 
+        <span class="w3-tag w3-teal">ASE</span> </br></li>
+        <br></div>
+      
+        <div class="filterDiv others=2017">
+        <li><strong>An Exploratory Study of Functionality and Learning Resources of Web APIs on ProgrammableWeb</strong>, 
+        <br>in 21th International Conference on Evaluation and Assessment in Software Engineering, 2017, 
+		<br>by <strong>Yuan Tian</strong>, Pavneet Singh Kochhar, and David Lo
+		<br>Tags: <span class="w3-tag w3-teal">Web API</span> 
+        <span class="w3-tag w3-teal">Empirical Software Engineering</span> 
+        <span class="w3-tag w3-teal">EASE</span>  </br></li>
+		<br></div>
+		
+		<div class="filterDiv saner-2017">
+		<li><strong>Harnessing Twitter to Support Serendipitous Learning of Developers</strong>, 
+		<br>in 24th IEEE International Conference on Software Analysis, Evolution, and Reengineering, 2017,
+		<br>by Abhishek Sharma, <strong>Yuan Tian</strong>, Agus Sulistya, and David Lo [<a href="assets/doc/SANER17-URL.pdf">pdf</a>]
+		<br>Tags: <span class="w3-tag w3-teal">Twitter for Software Engineering</span> 
+        <span class="w3-tag w3-teal">SANER</span>  </br></li>
+		<br></div>
+	
+		<div class="filterDiv others-2016">
+		<li><strong>Learning to Rank for Bug Report Assignee Recommendation</strong>, 
+		<br>in 24th IEEE International Conference on Program Comprehension, 2016,
+		<br>by <strong>Yuan Tian</strong>, Dinusha Wijedasa, David Lo, and Claire Le Goues [<a href="assets/doc/ICPC2016.pdf">pdf</a>]
+		<br>Tags: 
+		<span class="w3-tag w3-teal">Bug Triage</span> 
+		<span class="w3-tag w3-teal">Learining to rank</span> 
+		<span class="w3-tag w3-teal">ICPC</span> </br></li>
+		<br></div>
+	
+		<div class="filterDiv icsm-2015">
+		<li><strong>What's Hot in Software Engineering Twitter Space?</strong>, 
+		<br>in 31nd IEEE International Conference on Software Maintenance and Evolution (ERA track), 2015,
+		<br>by Abhishek Sharma, <strong>Yuan Tian</strong>, David Lo.[<a href="assets/doc/ICSME15-twitter.pdf">pdf</a>]
+		<br>Tags: 
+		<span class="w3-tag w3-teal">Twitter for Software Engineering</span> 
+		<span class="w3-tag w3-teal">Event Detection</span> 
+		<span class="w3-tag w3-teal">ICSME</span>  </br></li>
+		<br></div>
+	
+		<div class="filterDiv icsm-2015">
+		<li><strong>What are the Characteristics of High-Rated Apps? A Case Study on Free Android Applications</strong>, 
+		<br>in 31nd IEEE International Conference on Software Maintenance and Evolution, 2015,
+		<br>by <strong>Yuan Tian</strong>, Meiyappan Nagappan, David Lo and Ahmed E. Hassan. [<a href="assets/doc/ICSME15-app.pdf">pdf</a>]
+	    <br>Tags: <span class="w3-tag w3-teal">Mining Android Apps</span> 
+	    <span class="w3-tag w3-teal">Empirical Software Engineering</span> 
+	    <span class="w3-tag w3-teal">ICSME</span>  </br></li>
+		<br></div>
+		
+		<div class="filterDiv saner-2015">
+		<li><strong>A Comparative Study on the Effectiveness of Part-of-Speech Tagging Techniques on Bug Reports</strong>, 
+		<br>in 22nd IEEE International Conference on Software Analysis, Evolution, and Reengineering (ERA track), 2015,
+		<br>by <strong>Yuan Tian</strong>, David Lo. [<a href="assets/doc/SANER2015-ERA.pdf">pdf</a>]
+		<br>Tags: 
+		<span class="w3-tag w3-teal">Natural Language Processing</span> 
+		<span class="w3-tag w3-teal">SANER</span>  </br></li>
+		<br></div>
+		
+		<div class="filterDiv saner-2015">
+		<li><strong>NIRMAL: Automatic Identification of Software Relevant Tweets Leveraging Language Model</strong>, 
+		<br>in 22nd IEEE International Conference on Software Analysis, Evolution, and Reengineering, 2015,
+		<br>by Abhishek Sharma, <strong>Yuan Tian</strong>, David Lo. [<a href="assets/doc/SANER2015.pdf">pdf</a>]
+		<br>Tags: <span class="w3-tag w3-teal">Twitter for Software Engineering</span>
+		<span class="w3-tag w3-teal">SANER</span>  </br></li>
+		<br></div>
+		
+		<div class="filterDiv others-2015">
+		<li><strong>Evaluating Defect Prediction Approaches Using A Massive Set of Metrics: An Empirical Study</strong> 
+		<br>in 30th Annual ACM Symposium On Applied Computing, 2015,
+		<br>by Xiao Xuan, David Lo, Xin Xia and <strong>Yuan Tian</strong>.
+	    <br>Tags: <span class="w3-tag w3-teal">Empirical Software Engineering</span>
+	    <span class="w3-tag w3-teal">SAC</span> </br></li>		
+		<br></div>
+
+		<div class="filterDiv ase-2014">
+		<li><strong>Potential Biases in Bug Localization: Do They Matter?</strong>, 
+		<br>in 29th IEEE/ACM International Conference on Automated Software Engineering, 2014,
+		<br>by Pavneet Singh Kochhar, <strong>Yuan Tian</strong>, David Lo.[<a href="assets/doc/ASE2014.pdf">pdf</a>]
+		<br>Tags: <span class="w3-tag w3-teal">Bias Analysis</span>
+		<span class="w3-tag w3-teal">Empirical Software Engineering</span>
+		<span class="w3-tag w3-teal">ASE</span>  </br></li>
+		<br></div>	
+		<div class="filterDiv icse-2014">
+        <li><strong>SEWordSim: software-specific word similarity database</strong>, 
+        <br>in ACM/IEEE International Conference on Software Engineering (Tool), 2014,
+		<br>by <strong>Yuan Tian</strong>, David Lo, Julia Lawall.
+		<br>Tags: <span class="w3-tag w3-teal">Word Similarity</span>
+		 <span class="w3-tag w3-teal">StackOverflow for Software Engineering</span>
+		<span class="w3-tag w3-teal">ICSE</span> </br></li>
+		<br></div>
+		
+		<div class="filterDiv icse-2014">
+		<li><strong>BOAT: An Experimental Platform for Researchers to Comparatively and Reproducibly Evaluate Bug Localization Techniques</strong>, 
+		<br>in ACM/IEEE International Conference on Software Engineering (Tool), 2014,
+		<br>by Xinyu Wang, David Lo, Xin Xia, Xingen Wang, Pavneet Singh Kochhar, <strong>Yuan Tian</strong>, Xiaohu Yang, Shanping Li, Jianling Sun and Bo Zhou.
+		<br>Tags: <span class="w3-tag w3-teal">Bug Localization</span> 
+		<span class="w3-tag w3-teal">ICSE</span>  </br></li>
+		<br></div>
+		
+		<div class="filterDiv saner-2014">
+		<li><strong>Automated Construction of a Software-Specific Word Similarity Database</strong>, 
+		<br>in IEEE CSMR-WCRE 2014 Software Evolution Week, 2014,
+		<br>by <strong>Yuan Tian</strong>, David Lo, Julia Lawall. [<a href="assets/doc/CSMR-WCRE2014.pdf">pdf</a>]
+		<br><strong>Publicly available data set and related tool, documents:  [<a href="https://drive.google.com/folderview?id=0B8cuz9Ureg2bdEZRTlhTU0FmNmM&usp=sharing">Link</a>]</strong>
+		<br>Tags: <span class="w3-tag w3-teal">Word Similarity</span> 
+		<span class="w3-tag w3-teal">StackOverflow for Software Engineering</span>
+		<span class="w3-tag w3-teal">CSMR-WCRE</span> </br></li>
+		<br></div>
+		
+		<div class="filterDiv icsm-2013">
+		<li><strong>DRONE:Predicting Priority of Reported Bugs by Multi-Factor Analysis</strong>, 
+		<br>in the 29th IEEE International Conference on Software Maintenance, 2013,
+		<br>by <strong>Yuan Tian</strong>, David Lo, Chengnian SUN. [<a href="assets/doc/ICSM2013.pdf">pdf</a>]
+		<br>Tags: <span class="w3-tag w3-teal">Bug Prioritization</span>
+		<span class="w3-tag w3-teal">Multi-Factor Analysis</span>
+		<span class="w3-tag w3-teal">ICSM</span>  </br></li>
+		<br></div>
+		
+		<div class="filterDiv saner-2013">
+		<li><strong>Predicting Project Outcome Leveraging Socio-Technical Network Patterns</strong>, 
+		<br>in the 17th European Conference on Software Maintenance and Reengineering, 2013,
+		<br>by Didi Surian, <strong>Yuan Tian</strong>, David Lo, Hong Cheng and Ee-Peng Lim.  [<a href="assets/doc/CSMR2013.pdf">pdf</a>]
+		<br>Tags: <span class="w3-tag w3-teal">Social Network Analysis</span>
+		<span class="w3-tag w3-teal">CSMR</span>  </br></li>
+        <br></div>
+        <div class="filterDiv icsm-2012">
+		<li><strong>Automatic Classification of Software Related Microblogs</strong>, 
+		<br>in the 28th IEEE International Conference on Software Maintenance (ERA track), 2012
+		<br>by Philips Kokoh Prasetyo, David Lo, Achananuparp Palakorna, <strong>Yuan Tian</strong>, and Ee-Peng Lim  [<a href="assets/doc/ICSM2012-ERA.pdf">pdf</a>]
+		<br>Tags:  <span class="w3-tag w3-teal">Twitter for Software Engineering</span>
+		<span class="w3-tag w3-teal">ICSM</span>  </br></li>
+		<br></div>	
+		<div class="filterDiv saner-2012">
+		<li><strong>Information Retrieval Based Nearest Neighbor Classification for Fine-Grained Bug Severity Prediction</strong>, 
+		<br>the 19th Working Conference on Reverse Engineering, 2012,
+		<br>by <strong>Yuan Tian</strong>, David Lo, and Chengnian SUN  [<a href="assets/doc/wcre2012.pdf">pdf</a>]
+		<br>Tags:  <span class="w3-tag w3-teal">Bug Severity Prediction</span>
+		<span class="w3-tag w3-teal">Information Retrieval</span>
+		<span class="w3-tag w3-teal">WCRE</span> </br></li>
+		<br></div>
+		
+		<div class="filterDiv ase-2012">
+		<li><strong>Observatory of Trends in Software Related Microblogs</strong>, 
+		<br>in the 27th IEEE/ACM International Conference on Automated Software Engineering (Tool), 2012,
+		<br>by Achananuparp Palakorna, Nelman Lubis IBRAHIM, <strong>Yuan Tian</strong>, David Lo, and Ee-Peng Lim  [<a href="assets/doc/ASE2012-tool.pdf">pdf</a>]
+		<br>Tags:  <span class="w3-tag w3-teal">Twitter for Software Engineering</span>
+		<span class="w3-tag w3-teal">Trend Analysis</span>
+		<span class="w3-tag w3-teal">ASE</span> </br></li>
+		<br></div>
+		
+		<div class="filterDiv msr-2012">
+		<li><strong>What Does Software Engineering Community Microblog About?</strong>, 
+		<br>in the 9th Working Conference on Mining Software Repository, 2012,
+		<br>by <strong>Yuan Tian</strong>, Palakorn Achananuparp, Ibrahim Nelman Lubis, David Lo, and Ee-Peng Lim.  [<a href="assets/doc/MSR2012-short.pdf">pdf</a>]
+		<br>Tags: <span class="w3-tag w3-teal">Twitter for Software Engineering</span>
+		<span class="w3-tag w3-teal">MSR</span>  </br></li>
+		<br></div>
+		<div class="filterDiv saner-2012">
+		<li><strong>Improved Duplicate Bug Report Identification</strong>, 
+		<br>in the 15th European Conference on Software Maintenance and Reengineering (ERA track), 2012,
+		<br>by <strong>Yuan Tian</strong>, Chengnian Sun, and David Lo  [<a href="assets/doc/CSMR2012-ERA.pdf">pdf</a>]
+		<br>Tags: <span class="w3-tag w3-teal">Duplicate Bug Report Detection</span>
+		<span class="w3-tag w3-teal">CSMR</span> </br></li>
+		<br></div>
+		<div class="filterDiv icse-2012">
+		<li><strong>Identifying Linux Bug Fixing Patches</strong>, 
+		<br>in the 34th ACM/IEEE International Conference on Software Engineering, 2012,
+		<br>by <strong>Yuan Tian</strong>, Julia Lawall, and David Lo  [<a href="assets/doc/ICSE2012.pdf">pdf</a>]
+		<br>Tags: <span class="w3-tag w3-teal">Bug Fixing Patch Identification</span>
+		<span class="w3-tag w3-teal">ICSE</span>  </li>
+        <br></div>
+        </ol>
+        
+        <div class="filterDiv others-2013,2014">
+        <h3 class="w3-text-blue-grey">Published Workshop Papers </h3>
+        </div>
+        <ol>
+        <div class="filterDiv others-2013">
+        <li><strong>Predicting Best Answerers for New Questions: An Approach Leveraging Topic Modeling and Collaborative Voting</strong>, 
+		<br>in the 1st Workshop of Quality, Motivation and Coordination of Open Collaboration (QMC2013, co-organized with SocInfo13),
+		<br>by <strong>Yuan Tian</strong>, Pavneet Singh Kochhar, Em-Peng Lim, Feida Zhu and David Lo. [<a href="assets/doc/QMC2013.pdf">pdf</a>]</br></li>
+		<br></div>
+		<div class="filterDiv others-2014">
+		<li><strong>An Exploratory Study on Software Microblogger Behaviors</strong>,  
+		<br>in 4th Workshop on Mining Unstructured Data (MUD 2014), 
+		<br>by <strong>Yuan Tian</strong>, David Lo.</br></li></div>
+        </ol>
+        
+          <div class="filterDiv others-2014">
+        <h3 class="w3-text-blue-grey">Published Book Chapters(Refereed)</h3>
+        </div>
+	  <ol>
+	       <div class="filterDiv others-2014">
+        <li><strong>Leveraging Web 2.0 for Software Evolution</strong>, Evolving Software Systems (ESS 2014)
+		<br>by <strong>Yuan Tian</strong>, David Lo.</br></li></div>
+        </ol>
+        	        <div class="filterDiv others-2017">
+         <h3 class="w3-text-blue-grey">Thesis</h3>
+         </div>
+	  <ol>
+	        <div class="filterDiv others-2017">
+        Yuan Tian, "Mining software repositories for automatic software bug management from bug triaging to patch backporting", PhD Dissertation, Singapore Management University, 2017.
+ </div>
+      </section>
+	  </div>
+    </div> <!-- /container -->
+    </div>
+
+
+
+
+<div class="w3-col" style="width:30%">
+<div class="w3-col" style="width:50%">
+<h5 class="w3-text-blue-grey">by Year<h5>
+<div id="myBtnContainer">
+  <button class="btn active w3-teal" onclick="filterSelection('all')"> Show all</button>
+  <p><button class="btn w3-teal" onclick="filterSelection('2017')"> 2017 </button> * 5 </p>
+  <p><button class="btn w3-teal" onclick="filterSelection('2016')"> 2016 </button> * 2</p>
+  <p><button class="btn w3-teal" onclick="filterSelection('2015')"> 2015 </button> * 6 </p>
+  <p><button class="btn w3-teal" onclick="filterSelection('2014')"> 2014 </button> * 6</p>
+  <p><button class="btn w3-teal" onclick="filterSelection('2013')"> 2013 </button> * 3</p>
+  <p><button class="btn w3-teal" onclick="filterSelection('2012')"> 2012 </button> * 6</p>
+</div>
+</div>
+
+<div class="w3-col" style="width:50%">
+<h5 class="w3-text-blue-grey">by Venue <h5>
+<!-- Control buttons -->
+<div id="myBtnContainer">
+  <p><button class="btn w3-teal" onclick="filterSelection('icse')"> ICSE </button> * 3 </p>
+  <p><button class="btn w3-teal" onclick="filterSelection('ase')"> ASE </button> * 3</p>
+  <p><button class="btn w3-teal" onclick="filterSelection('emse')"> EMSE </button> * 2</p>
+  <p><button class="btn w3-teal" onclick="filterSelection('icsm')"> ICSME </button> * 4 </p>
+  <p><button class="btn w3-teal" onclick="filterSelection('saner')"> SANER</button> * 7</p>
+  <p><button class="btn w3-teal" onclick="filterSelection('msr')"> MSR </button> * 1</p>
+</div>
+</div>
+</div>
+</div>    
+  <footer id="myFooter">
+    <div class="w3-container w3-theme-l2 w3-padding-32">
+      <h4>Last updated Dec 2017</h4>
+    </div>
+
+    
+  </footer>
+
+<!-- END MAIN -->
+</div>
+
+
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("filterDiv");
+  if (c == "all") c = "";
+  // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+// Show filtered elements
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {
+      element.className += " " + arr2[i];
+    }
+  }
+}
+
+// Hide elements that are not selected
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1); 
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current control button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+		
+		
+
+</body>
+</html>

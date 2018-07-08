@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<title>Yuan Tian's Home Page</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+.w3-sidebar {
+  z-index: 3;
+  width: 250px;
+  top: 43px;
+  bottom: 0;
+  height: inherit;
+}
+
+.center {
+    margin: auto;
+    width: 70%;
+    padding: 10px;
+}
+
+</style>
+
+
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+    <a href="#about" class="w3-bar-item w3-button w3-hide-small w3-hover-white">About</a>
+    <a href="#research" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Research</a>
+    <a href="#experience" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Experiences</a>
+    <a href="#service" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Service</a>
+    <a href="publications.htm" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Publications</a>
+    <a href="#award" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Awards</a>
+
+
+  </div>
+</div>
+
+<!-- The Grid -->
+       <a name="about"></a>  
+ <div class="w3-row w3-padding-64">
+     <div class="w3-col" style="width:92%">
+<!-- Left component -->
+ <div class="w3-twothird w3-container">
+  <div class="w3-col" style="width:12%"><p></p></div>
+  <div class="w3-col" style="width:84%">
+  
+        <h1 class="w3-text-blue-grey">Yuan Tian</h1>
+        <p>Welcome to Yuan Tian's Homepage. She is now a data scientist at the Living Analytics Research Centre (LARC), Singapore Management University (SMU). Her current advisor is 
+        <a href='https://sis.smu.edu.sg/faculty/profile/9626/LIM-Ee-Peng'>Prof. Lim Ee Peng</a>, 
+        who is a professor of Information Systems, SMU and the director of LARC. Prior to joining LARC, she got her Ph.D degree in Information Systems from SMU 
+        in 2017, where she was supervised by <a href='http://www.mysmu.edu/faculty/davidlo/'>Prof. David Lo</a>. She got her bachelor's degree in Computer Science from Zhejiang University in 2012. </p>
+
+        <p>She has broad interest in <strong class="w3-text-blue-grey">Data Mining, Software Engineering, and Social Network Analysis</strong>. Her research aims to 
+         help people understand data stored in all kinds of software repositories and use the data to improve software development efficiency and productivity. 
+         </p>
+        <a name="research"></a> 
+        <hr>
+        <div class="w3-row">
+        <h2 class="w3-text-blue-grey">Selected Research Projects</h4>
+        <p> Tian's past research is concerned with developing new machine learning tools 
+        for developers to support/automate their software development and maintainance process, 
+        specially, for bug management and knowledge extraction process.
+         
+        <h4 class="w3-text-blue-grey">APIBot: Question Answering Bot for API Documentation</h4>
+        <p>To addresses the daunting task of finding information about APIs, we constructs
+         a question answering (QA) bot called APIBot. We note that applying well-established general-purpose 
+         QA systems to API documentation poses three key challenges: 
+          (1) API QA process needs to consider domain-specific patterns and software-specific terms, 
+          (2) Much semantic of an API documentation is hidden in its implicit structure,
+           (3) general-purpose QA bots require a large amount of manually created training data that is not necessarily available for API documentation. 
+           APIBot addresses these challenges by introducing novel components on top of a general-purpose QA system SiriusQA. 
+           An empirical evaluation of APIBot on 92 API questions showed that APIBot can achieve at Hit@5 score of 0.706 (i.e. the correct answer is among the top five answers returned about 70% of the time).
+          This paper appears in the ASE17 proceedings. Access it at 
+          <a href="https://dl.acm.org/citation.cfm?id=3155585" >here</a>.</p>
+        <br>
+        <h4 class="w3-text-blue-grey">  Automated Software Bug Triage</h4>
+       <p> Software systems are often released with bugs due to system complexity and inadequate testing. To help developers 
+       effectively address and manage bugs, bug tracking systems such as Bugzilla and JIRA are adopted to 
+       manage the life cycle of a bug through bug report. Since most of the information related to bugs are stored in software repositories, e.g., bug tracking systems, 
+       version control repositories, mailing list archives, etc. These repositories contain a wealth of valuable information, 
+       which could be mined to automate bug management process and thus save developers time and effort. In the past, we have shown how 
+       historical bug data could help with automated bug triage process, including duplicate bug report detection 
+       (refer to our <a href="http://ieeexplore.ieee.org/abstract/document/6178884/" >CSMR12 paper</a>),
+       bug report prioritization (refer to our <a href="https://link.springer.com/article/10.1007/s10664-014-9331-y" >EMSE15 paper</a>),
+        and bug report assignment (refer to our <a href="http://ieeexplore.ieee.org/abstract/document/7503715/" >ICPC16 paper</a>). </p>
+         
+     <br>
+        <h4 class="w3-text-blue-grey"> Mining Socail Media for Software Engineering</h4>
+        <p>Different from traditional media, microblog users tend to focus on recency and informality of content. 
+        Many tweet contents are relatively more personal and opinionated, compared to that of traditional news report. 
+        Thus, by analyzing microblogs, one could get the real-time information about what people are interested in or feel toward a particular topic. 
+        To support developers in collecting software engineering related content, 
+        we build a microblog observatory that aggregates more than 58,000 Twitter feeds,
+         captures software-related tweets, and computes trends from across topics and time points 
+         (refer to our <a href="https://dl.acm.org/citation.cfm?id=2351740">  MSR12 tool paper</a>). 
+         We also applied latest event detection algorithm to find hot topics related to software engineering 
+         on Twitter (refer to our <a href="http://ieeexplore.ieee.org/abstract/document/7332510/">ICSME15 paper</a>).
+         To extract software engineering related content from twitter, we perform a preliminary study to investigate the feasibility of automatic classification of microblogs into two categories: relevant and irrelevant to engineering software systems 
+         in our <a href="http://ieeexplore.ieee.org/abstract/document/6224287/">  MSR12 paper</a>.
+         Following this work, we propose a novel approach named NIRMAL (refer to our <a href="http://ieeexplore.ieee.org/abstract/document/7081855/">  SANER15 paper</a>), 
+         which automatically identifies software relevant tweets from a collection or stream of tweets based on language modelling. 
+         Recently, we propose a new approach to find and rank URLs harvested from Twitter based on their in formativeness and relevance to a domain of interest 
+         (refer to our <a href="http://ieeexplore.ieee.org/abstract/document/7884639/">SANER17 paper</a>).</p>
+        <br>
+        
+        <h4 class="w3-text-blue-grey"> Bug Fixing Patch Identification </h4>
+        <p>There is a continuing tension between the need to develop and test new features, 
+        and the need to provide a stable and secure execution environment to users.
+         A compromise, adopted by the developers of the Linux kernel, is to release new versions, 
+         including bug fixes and new features, frequently, while maintaining some older\long-term" versions.
+          This strategy raises the problem of how to identify bug fixing patches that are submitted to the 
+          current version but should be applied to the long-term versions as well. 
+          We propose an approach that automatically identifies bug fixing patches based on
+           the changes and commit messages recorded in code repositories. This paper appears in the ICSE12 proceedings. 
+           Access it at <a href="https://dl.acm.org/citation.cfm?id=2337269" >here</a>. 
+           Recently, we also propose a convolutional neural networks based approach to solve the same problem 
+           (refer to my thesis at <a href="http://ink.library.smu.edu.sg/etd_coll_all/26/" >here</a>).</p>
+
+
+               </div>
+      		<a name="experience"></a>  
+			<hr>       
+          <h2 class="w3-text-blue-grey">Academic Professional Experiences</h2>
+          <li>Visiting Researcher, <br>Institute of Software Research, Carnegie Mellon University, USA</li>
+          <h6 class="w3-text-blue-grey"><i class="fa fa-calendar fa-fw w3-margin-right"></i>August 2015 - May 2016</h6>
+               
+          <li >Visiting Researcher, <br>School of Computing, Queen's University, Canada</li>
+          <h6 class="w3-text-blue-grey"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Mar 2012 - Dec 2014</h6>
+               
+          <li>Visiting Researcher, <br>INRIA/LIP6, France</li>
+          <h6 class="w3-text-blue-grey"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jun 2010 - Mar 2012</h6>
+          
+          <a name="award"></a>   
+          <hr>      
+          <h2 class="w3-text-blue-grey">Awards</h2>               
+          <li >Best Paper Award, SANER ERA track, 2017.</li>
+	<li> Delegates of SMU to attend the 2017 Royal Society Commonwealth Science Conference, invited by the National Research Foundation (NRF) of Singapore, 2017.</li>
+		<li>    SMU Presidential Doctoral Fellowship, 2015-2016. </li>
+		<li>   Best Paper Award nomination, ICSM, 2013. </li>
+		<li>  Travel Grant for Female Students, provided by Google and ICSM, 2013.</li>
+	<li>   Temasek Foundation Leadership Enrichment and Regional Networking Scholarship, 2012.</li>
+          
+   
+     </div>
+</div>
+
+ <!-- Right component -->
+
+  <div class="w3-third w3-container">
+  
+        <div class="center"">
+          <img src="img/home-picture.jpg" style="width:60%" >        
+        </div>       
+        
+        <div class="w3-container">
+          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-blue-grey"></i>Data Scientist</p>
+          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-blue-grey"></i>Living Analytics Research Centre, </br>
+          80 Stamford Road, Singapore 178902</p>
+          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-blue-grey"></i>ytian at smu dot edu dot sg</p>
+        <p><i class="material-icons fa-fw w3-margin-right w3-large w3-text-blue-grey ">cloud</i><a href="https://scholar.google.com.sg/citations?user=wX4le_QAAAAJ&hl=en" >Google Scholar</a></p>
+
+        
+        <hr> 
+         <p><i class="fa fa-newspaper-o fa-fw w3-margin-right w3-large w3-text-blue-grey"></i>News</p>
+        <ul>
+		<li>Our paper "APIBot: question answering bot for API documentation" has been accepted by ASE 2017!</li>
+		<li>Our paper "WebAPIRec: Recommending Web APIs to Software Projects via Personalized Ranking" has been accepted by the IEEE Transactions on Emerging Topics in Computational Intelligence.</li>
+		<li>Our paper "Harnessing Twitter to Support Serendipitous Learning of Developers" won the Best Paper Award in the ERA track of SANER 2017!</li>
+		</ul>
+                  
+        <a name="service"></a> 
+        <br>
+        <hr>    
+        <h4 class="w3-text-blue-grey">Service</h4>
+		<h5 class="w3-text-blue-grey">Program Committee Member</h5>   
+		<ul>
+		<li>25th IEEE International Conference on Software Analysis, Evolution and Reengineering (SANER), ERA track, Campobasso, Italy, 2018. </li>
+		<li>22nd International Conference on Evaluation and Assessment in Software Engineering (EASE), Short papers, Christchurch, New Zealand, 2018. </li>
+        <li>10th International Conference on Collaboration Technologies (CollabTech), Setubal, Portugal, 2018.</li>
+		</ul>
+		<h5 class="w3-text-blue-grey">Journal Referee</h5>   
+		<ul>
+		<li>IEEE Transactions on Software Engineering (TSE)</li>
+	    <li>ACM Transactions on Software Engineering and Methodology (TOSEM)</li>
+	    <li>ACM Transactions on Information Systems (TOIS)</li>
+	    <li>Empirical Software Engineering (EMSE)</li>
+	    <li>Transactions on Intelligent Systems and Technology (TIST)</li>
+	    <li>Transactions on Services Computing (TSC)</li>
+	    <li>Information and Software Technology (IST)</li>
+	    <li>Journal of Software: Evolution and Process (JSMS)</li>
+		</ul>
+		<h5 class="w3-text-blue-grey">Conference External Reviewer</h5>   
+		<ul>
+		<li>VL/HCC (2017), ICSME (2017), MSR (2016, 2017), EASE (2017), SCAM (2016), SAC (2016), APSEC (2015)</li>
+		</ul>
+        </div>
+    <!-- End Left Column -->
+    </div>
+    </div>
+</div>
+    
+  <footer id="myFooter">
+    <div class="w3-container w3-theme-l2 w3-padding-32">
+      <h4>Last updated in Dec 2017</h4>
+    </div>
+
+    
+  </footer>
+
+<!-- END MAIN -->
+</div>
+
+
+
+</body>
+</html>
