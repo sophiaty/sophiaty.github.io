@@ -1197,7 +1197,7 @@ img.svg{
 			box-sizing: border-box; /* Opera/IE 8+ */
 }
 .arlo_tm_portfolio_list > li{
-	width:33.3333%;
+	width:25%;
 	float:left;
 	position:relative;
 	margin: 0px 0px 30px 0px;
