@@ -1,206 +1,358 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Yuan Tian</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-            crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"/>
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
     <link href="main.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
 </head>
+
 <body>
-<!-- Header -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                <div class="nav-icons fs-4">
-                <a href="mailto:y.tian@queensu.ca"><i class="bi bi-envelope"></i></a>
-                <a href="https://scholar.google.ca/citations?user=wX4le_QAAAAJ&hl=en" target="_blank" title="Google Scholar"><i class="ai ai-google-scholar-square socialbtns-icon"></i></a>
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="#about">Yuan Tian |</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#news">News</a></li>
+                    <li class="nav-item"><a class="nav-link" href="publications.html">Publications</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#lab">RISE Lab</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#teach">Teaching</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cv.html">Curriculum Vitae</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <section id="about">
+        <div class="container">
+            <div class="header">
+                <h1 class="name">
+                    Yuan Tian (田园)
+                </h1>
+                <p class="subtitle">
+                    Assistant Professor · Queen's University, Canada · School of Computing <br />
+                    AI for Software Engineering · LLM · MSR
+                </p>
+            </div>
+            <hr>
+            <div class="container-fluid ">
+                <div class="content row">
+                    <div class="display: flex; flex-wrap: wrap;">
+                        <div class="col-xs-12 col-sm-6 p-0 pt-2 pb-sm-2 pb-4 pl-sm-4 text-center" style="float: right;">
+                            <img class="profile-img img-responsive" src="images/yuanbib.jpg" align="middle"
+                                height="200">
+                        </div>
+                        <p class="text-justify">
+                            Dr. Yuan Tian is an Assistant Professor in the <a href="https://www.cs.queensu.ca/"
+                                target="_blank"> School of Computing at Queen's University</a>, Canada. Before joining
+                            Queen's, Yuan was a
+                            data scientist at the Living Analytics Research Centre (LARC)</a>, Singapore. She received
+                            her Ph.D. degree in Information Systems from Singapore Management University in May 2017,
+                            under the supervision of Prof.
+                            <a href="http://www.mysmu.edu/faculty/davidlo/" target="_blank"> David Lo</a> (IEEE/ACM
+                            fellow). Yuan visited <a href="https://www.cmu.edu/" target="_blank">
+                                Carnegie Mellon University</a> in 2015 and <a
+                                href="https://www.inria.fr/en/inria-paris-centre" target="_blank">Inria Paris</a> in
+                            2013.
+                        </p>
+                        <p class="text-justify">
+                            Yuan leads the <i>RISE research lab</i> which <b>develops <u>reliable</u> and
+                                <u>intelligent</u> support for <u>software engineering</u></b>.
+                            RISE’s current research topics include
+                            <span class="highlight">automatic technical debt/bug/code change management</span>,
+                            <span class="highlight">LLM for code transformation</span> and
+                            <span class="highlight">human-AI collaboration</span>.
+                        </p>
+                        <p class="text-justify">
+                            <strong>Thank you for your interest. All available spots for Fall 2025 have been filled.
+                            </strong>
+                        </p>
+                    </div>
                 </div>
-                <li class="nav-item">
-                    <a class="nav-link active" href="index.html">About</a>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="news">
+        <div class="container">
+            <div class="section-title">
+                <span>News</span>
+            </div>
+            <ul>
+                <li>
+                    <span class="date">[12/2024]</span> <i class="fas fa-file-alt"></i> Our paper
+                    <b>"Obfuscated Clone Search in JavaScript based on Reinforcement Subsequence Learning"</b>
+                    was accepted by TOSEM. Congratulations, Leo and co-authors!
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="publications.html">Publications</a>
+                <li>
+                    <span class="date">[11/2024]</span> <i class="fas fa-bullhorn"></i> I am honored to serve as
+                    <b>co-chair</b> for the SETA
+                    (Symposium on Software
+                    Engineering Technologies & Applications) track of the 49th IEEE Computer Society Signature
+                    Conference on
+                    Computers, Software, and Applications (COMPSAC 2025). <b>Please consider submit your work to <a
+                            href="https://ieeecompsac.computer.org/2025/seta/">COMPSAC'25</a></b>. We are looking
+                    forward to seeing you July 2025 in Toronto <img src="images/toronto.png" alt="Icon"
+                        class="custom-icon" />.
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="lab.html">RISE Lab</a>
+                <li>
+                    <span class="date">[10/2024]</span> <i class="fas fa-file-alt"></i> Our paper
+                    <b>"ZS4C: Zero-Shot Synthesis of Compilable Code for Incomplete Code Snippets using LLMs"</b>
+                    was accepted by TOSEM. Congratulations, co-authors!
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="teaching.html">Teaching</a>
+                <li>
+                    <span class="date">[10/2024]</span> <i class="fas fa-dollar-sign"> </i> Our NSERC Alliance-Mitacs
+                    project on
+                    <b>"Pragmatic Automated Code Transformation Leveraging Large Language Models"</b> has been funded.
+                    We will be collaborating with our industry partner Ross Video on this exciting project.
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="service.html">Services</a>
+                <li>
+                    <span class="date">[10/2024]</span> <i class="fas fa-file-alt"></i> Our paper
+                    <b>"An Empirical Study on Developers Shared Conversations with ChatGPT in GitHub Pull Requests and
+                        Issues"</b> was accepted by the Journal First Track of the 47th ACM/IEEE International
+                    Conference on Software Engineering (ICSE 2025). Huizi will present the work at ICSE 2025 in Ottawa
+                    <img src="images/ottawa.png" alt="Icon" class="custom-icon" />.
+                </li>
+            </ul>
+            <!-- View All News link -->
+            <p><a href="news.html">View all News →</a></p>
+        </div>
+    </section>
+
+
+    <section id="publications">
+        <div class="container">
+            <div class="section-title">
+                <span>Selected Publications</span>
+            </div>
+            <ul>
+                <li>
+                    <b>Obfuscated Clone Search in JavaScript based on Reinforcement Subsequence Learning.</b>
+                    <em>ACM Transactions on Software Engineering and Methodology (TOSEM), 2025.</em>
+                </li>
+                <li>
+                    <b>ZS4C: Zero-Shot Synthesis of Compilable Code for Incomplete Code Snippets using ChatGPT.</b>
+                    <em>ACM Transactions on Software Engineering and Methodology (TOSEM), 2024.</em>
+                </li>
+                <li>
+                    <b>An Empirical Study on the Effectiveness of Large Language Models for SATD Identification and
+                        Classification.</b>
+                    <em>Empirical Software Engineering (EMSE), 2024.</em>
+                </li>
+                <li>
+                    <b>An Empirical Study on Developers Shared Conversations with ChatGPT in GitHub Pull Requests and
+                        Issues.</b>
+                    <span style="color: red; font-weight: bold;">Accepted by ICSE'25 Journal-First Track</span>
+                    and <em>Empirical Software Engineering (EMSE), 2024.</em>
+                </li>
+                <li>
+                    <b>PeaTMOSS: A Dataset and Initial Analysis of Pre-Trained Models in Open-Source Software. </b>
+                    <em>Mining Software Repositories (MSR), 2024.</em>
+                </li>
+                <li>
+                    <b>Exploring the Impact of the Output Format on the Evaluation of Large Language Models for Code
+                        Translation.</b>
+                    <span style="color: red; font-weight: bold;">Best Research Paper Award</span> at <em>AI Foundation
+                        Models and Software Engineering (Forge), 2024.</em>
+                </li>
+                <!-- Add more selected publications -->
+            </ul>
+            <p><a href="publications.html">View all publications →</a></p>
+        </div>
+    </section>
+
+    <section id="lab">
+        <div class="container">
+            <div class="section-title">
+                <span>RISE Lab (Goodwin 621)</span>
+                <img src="images/fulllogo_nobuffer.jpg" alt="Lab LOGO" />
+            </div>
+            <hr>
+            <h5>Current Students</h5>
+            <ul>
+                <li>
+                    <a href="https://scholar.google.com/citations?hl=en&user=haaC258AAAAJ&view_op=list_works&sortby=pubdate"
+                        target="_blank">
+                        <b>Mohammad Sadegh Sheikhaei</b>
+                    </a> PhD student, Fall 2020 - (on Job Market)
+                </li>
+                <li>
+                    <a href="https://scholar.google.com/citations?hl=en&user=4sXMBW4AAAAJ&view_op=list_works&sortby=pubdate"
+                        target="_blank">
+                        <b>Jerin Yasmin</b>
+                    </a> PhD student, Fall 2021 - (previous MSc student 2019-2021)
+                </li>
+                <li>
+                    <a href="https://kaziamithasan.github.io/" target="_blank">
+                        <b>Kazi Amit Hasan</b>
+                    </a> Fast-track PhD student (coadvised with Prof. Steven Ding), Fall 2022 -
+                </li>
+                <li>
+                    <a href="https://marcosmacedo.github.io/" target="_blank">
+                        <b>Marcos Macedo</b>
+                    </a> Fast-track PhD student (coadvised with Prof. Bram Adams), Fall 2023 -
+                </li>
+                <li>
+                    <a href="https://scholar.google.ca/citations?hl=en&user=Q7b3nwMAAAAJ&view_op=list_works&sortby=pubdate"
+                        target="_blank">
+                        <b>Huizi Hao</b>
+                    </a> Fast-track PhD student (coadvised with Prof. Ahmed Hassan), Fall 2023 -
+                </li>
+                <li>
+                    <b>Cameron Parker</b> MSc student, Winter 2024 -
+                </li>
+                <li>
+                    <b>David Jiang</b> MSc student, Fall 2024 -
+                </li>
+                <li>
+                    <b>Conor Gallagher</b> Undergraduate RA, Fall 2024 -
+                </li>
+                <li>
+                    <b>Mingjun Gao</b> Undergraduate RA, Fall 2024 -
+                </li>
+            </ul>
+            <hr>
+            <h5>Alumni</h5>
+            <ul>
+                <li>
+                    <b>Jiale Amber Wang</b> Undergraduate RA, 2022/04-2024/04 (Now research-based master at University
+                    of Waterloo)
+                </li>
+                <li>
+                    <b>Hong Qing</b> MSc student, 2022/09-2024/04 (Now work at Duke University)
+                </li>
+                <li>
+                    <b>DongJun Jin</b> MSc student, 2021/05-2022/09 (Now work at <a href="https://www.veeva.com/">Veeva
+                        Systems</a>)
+                </li>
+                <li>
+                    <b>Julia Liu</b> MSc student, 2020/08-2022/03
+                </li>
+                <li>
+                    <b>Hanwen Hu</b> MSc student, 2020/08-2021/10
+                </li>
+                <li>
+                    <b>Ka Lai Yung</b> MSc student, 2019/08-2021/05
                 </li>
             </ul>
         </div>
-    </div>
-</nav>
+    </section>
 
+    <section id="teach">
+        <div class="container">
+            <div class="section-title">
+                <span>Teaching</span>
+            </div>
+            <hr>
+            <h4>Current</h4>
+            <ul>
+                <li>
+                    <b>CISC 235</b> Data Structures, Winter 2025
+                </li>
+                <li>
+                    <b>CISC 351/372, CMPE 351</b> Advanced Data Analytics, Winter 2025
+                </li>
+            </ul>
+            <hr>
+            <h4>Past</h4>
+            <h5>Undergraduate Level</h5>
+            <ul>
+                <li>
+                    <b>CISC 235</b> Data Structures, Winter 2020, Fall 2020, Winter 2021-2024
+                </li>
+                <li>
+                    <b>CISC/CMPE 351</b> Advanced Data Analytics, Winter 2019-2024
+                </li>
+                <li>
+                    <b>CISC 451</b> Topics in Data Analytics, Fall 2024
+                </li>
+            </ul>
+            <h5>Graduate Level</h5>
+            <ul>
+                <li>
+                    <b>CISC 839</b> Topics in Data Analytics, Summer 2022-2024 (for DEBI program), Fall 2024 (for SOC,
+                    shared with CISC 451)
+                </li>
+                <li>
+                    <b>MDPM 822</b> Emerging Computing Technologies, Fall 2022-2024 (for MDPM program)
+                </li>
+                <li>
+                    <b>CISC 843/880 </b> Mining Software Respositories, Winter 2019-2021
+                </li>
+            </ul>
+        </div>
+    </section>
 
+    <section id="contact">
+        <div class="container">
+            <div class="section-title">
+                <span>Contact</span>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <ul class="contact-info">
+                        <li>
+                            <i class="bi bi-envelope"></i>
+                            <a href="mailto:y.tian@queensu.ca">y [dot] tian [at] queensu [dot] ca</a>
+                        </li>
+                        <li>
+                            <i class="bi bi-geo-alt"></i>
+                            School of Computing, Queen's University, Kingston, Ontario K7L 3N6
+                        </li>
+                        <li>
+                            <i class="bi bi-building"></i>
+                            Office: Goodwin 635
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <div id="map" style="height: 300px;"></div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<div class="container">
-    <div class="header">
-        <div style="margin-top: 30px;">
-            <h2>Yuan Tian</h2>
-            <h3>田园</h3>
-            <h6>School of Computing</h6>
-            <h6>Queen's University</h6>
-            <h6>Room 635, Goodwin Hall</h6>
-            <h6>Kingston, Ontario, Canada</h6>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Initialize the map for Goodwin Hall
+            const map = L.map('map').setView([44.22822101306825, -76.49260421500377], 17); // Coordinates for Goodwin Hall
+
+            // Add OpenStreetMap tiles
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            }).addTo(map);
+
+            // Add a marker for Goodwin Hall
+            L.marker([44.22822101306825, -76.49260421500377])
+                .addTo(map)
+                .bindPopup('<b>Goodwin Hall</b><br>Queen\'s University - School of Computing')
+                .openPopup();
+        });
+    </script>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="currentYear"></span> Yuan Tian. All rights reserved.</p>
+            <p>Last updated: Jan, 2025<span id="lastUpdated"></span></p>
         </div>
-    </div>
-    <hr>
-    <div class="container-fluid ">
-    <div class="content row">
-        <div class="display: flex; flex-wrap: wrap;">
-        <div class="col-xs-12 col-sm-6 p-0 pt-2 pb-sm-2 pb-4 pl-sm-4 text-center" style="float: right;">
-            <img class="profile-img img-responsive" src="1.jpg" align="middle" height="200">
-          </div>
-        <p class="text-justify">
-            Dr. Yuan Tian is an Assistant Professor in the <a href="https://www.cs.queensu.ca/" target="_blank"> School of Computing at Queen's University</a>, Canada. Before joining Queen's, Yuan was a
-            data scientist at the Living Analytics Research Centre (LARC), <a href="https://scis.smu.edu.sg/" target="_blank"> Singapore Management 
-            University (SMU)</a>. She received her Ph.D. degree in Information Systems from SMU in May 2017, under the supervision of Prof. 
-            <a href="http://www.mysmu.edu/faculty/davidlo/" target="_blank"> David Lo</a> (IEEE fellow). Yuan visited <a href="https://www.cmu.edu/" target="_blank">
-            Carnegie Mellon University</a> in 2015 and <a href="https://www.inria.fr/en/inria-paris-centre" target="_blank">Inria Paris</a> in 2013.
-        </p>       
-        <p class="text-justify">
-            Yuan leads the RISE research lab which develops reliable and intelligent support for software development. 
-            RISE’s current research topics include automatic technical debt and bug management, pull-based code change management, 
-            software engineering for data science and machine learning workflows, and social science in software engineering.
-        </p>
-        <p class="text-justify">
-            <strong>Yuan is actively looking for self-motivated master/PhD students who are excited about data mining and software
-                engineering (application dued for Fall 2023 MSc/PhD). </strong>
-        </p>
-    </div>
-</div>
-    </div>
-    <div class="news">
-        <h3>News</h3>
-        <div class="row">
-            <div class="col-sm-2">
-                <span class="badge bg-primary" style="text-align: text">2023 Aug</span>
-            </div>
-            <div class="col-sm-10">
-                <p class="text-justify">
-                    I am honored to serve on the program committee for SANER2024 (International Conference on Software Analysis, Evolution and Reengineering). SANER is the premier event on the theory and practice of recovering information from existing software and systems. We welcome your contributions via the main website of <a href="https://conf.researchr.org/home/saner-2024" target="_blank"> SANER 2024 </a>. 
-                </p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-2">
-                <span class="badge bg-primary" style="text-align: text">2023 Jul</span>
-            </div>
-            <div class="col-sm-10">
-                <p class="text-justify">
-                    I am honored to serve on the program committee for FSE2024. Please consider submitting your exciting work to of <a href="https://2024.esec-fse.org/track/fse-2024-research-papers" target="_blank"> FSE 2024 </a>. 
-                </p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-2">
-                <span class="badge bg-primary" style="text-align: text">2023 May</span>
-            </div>
-            <div class="col-sm-10">
-                <p class="text-justify">
-                    Our paper titled "Analyzing Gamer Complaints in Reviews of Cross-Platform Video Games on Steam" has been accepted by the 19th IEEE Conference on Games (CoG 2023). Congratulations to former RISE member Hanwen and co-authors!
-                </p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-2">
-                <span class="badge bg-primary" style="text-align: text">2023 Apr</span>
-            </div>
-            <div class="col-sm-10">
-                <p class="text-justify">
-                    I am honored to serve on the IEEE Conference Activities Committee (CAC). The committee reports to the IEEE Technical and Conference Activities Board. 
-                    More information about the IEEE technical & conference activities board can be found <a href="https://www.computer.org/volunteering/boards-and-committees/technical-activities" target="_blank"> here</a>. 
-                    
-                </p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-2">
-                <span class="badge bg-primary" style="text-align: text">2023 Apr</span>
-            </div>
-            <div class="col-sm-10">
-                <p class="text-justify">
-                    Our paper titled "An Empirical Study on GitHub Pull Requests Reactions" has been accepted by ACM Transactions on Software Engineering and Methodology (TOSEM) journal. Congratulations to co-authors!
-                </p>
-            </div>
-        </div>
-         <div class="row">
-            <div class="col-sm-2">
-                <span class="badge bg-primary" style="text-align: text">2023 Mar</span>
-            </div>
-            <div class="col-sm-10">
-                <p class="text-justify">
-                    I will give a talk on SEMLA (symposium on Software Engineering for Machine Learning Applications) 2023. SAMLA'23 will be host in Montreal on June 9 and 10, with a trending topic, i.e., Operationalizing Trustworthy AI. 
-                    More information about the program can be found <a href="https://semla.polymtl.ca/2023-program/" target="_blank"> here</a>. Stay tuned and welcome to participate!
-                    
-                </p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-2">
-                <span class="badge bg-primary" style="text-align: text">2023 Mar</span>
-            </div>
-            <div class="col-sm-10">
-                <p class="text-justify">
-                    Our paper titled "Understanding the Time to First Response in GitHub Pull Requests" has been accepted by the 20th 
-                    International Conference on Mining Software Repositories (MSR 2023). Congratulations to Amit and Marcos for getting their first 
-                    paper! 
-                </p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-2">
-                <span class="badge bg-primary" style="text-align: text">2023 Mar </span>
-            </div>
-            <div class="col-sm-10">
-                <p class="text-justify">
-                    I will be serving on the program committee of the Ideas, Visions and Relfections track of the 2023 edition of the ACM Joint 
-                    European Software Engineering Conference and Symposium on the Foundations of Software Engineering (ESEC/FSE). Welcome everyone for contributions!
-                </p>
-            </div>
-            
-        </div>
-        <div class="row">
-            <div class="col-sm-2">
-                <span class="badge bg-primary" style="text-align: text">2023 Feb </span>
-            </div>
-            <div class="col-sm-10">
-                <p class="text-justify">
-                    Our paper titled "Automated Self-Admitted Technique Debt Tracking at Commit-Level: A Language-independent Approach" has been accepted by the 6th 
-                    International Conference on Technical Debt (TechDebt 2023). Congratulations to Sadegh.
-                </p>
-            </div>
-            
-        </div>
-        <div class="row">
-            <div class="col-sm-2">
-                <span class="badge bg-primary" style="text-align: text">2023 Feb</span>
-            </div>
-            <div class="col-sm-10">
-                <p class="text-justify">
-                    Our paper "SCS-Gan: Learning Functionality-Agnostic Stylometric Representations for Source Code Authorship Verification", which is originally published at the Transactions of Software Engineering (TSE) journal has been accepted by the journal-first track of 
-                    the 45th International Conference on Software Engineering (ICSE)! Congratulations to co-authors! Looking forward to seeing SE researchers at ICSE23 and share this work in May.
-                    paper! 
-                </p>
-            </div>
-        </div>
-        
-    </div>
-</div>
+    </footer>
 </body>
+
 </html>
